@@ -6,7 +6,7 @@ import './Graphic/CSS/styles.css';
 export default function App() {
   return (
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <AppRoutes />
       </BrowserRouter>
     </React.StrictMode>
