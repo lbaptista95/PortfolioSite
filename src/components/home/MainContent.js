@@ -1,7 +1,9 @@
 import React from "react"
-import frontendIcon from '../Graphic/Images/frontend_icon.png';
-import backendIcon from '../Graphic/Images/backend_icon.png';
-import unityLogo from '../Graphic/Images/unity_logo.png';
+import frontendIcon from "../../Graphic/Images/frontend_icon.png"
+import backendIcon from '../../Graphic/Images/backend_icon.png';
+import unityLogo from '../../Graphic/Images/unity_logo.png';
+
+
 export default function MainContent() {
     return (
         <div className="mainContent">

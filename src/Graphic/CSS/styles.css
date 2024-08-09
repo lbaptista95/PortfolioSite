@@ -26,6 +26,11 @@ body {
     background: linear-gradient(transparent, var(--background1)), url(../Images/header_bg.jpg);
 }
 
+.app-header {
+    display: flex;
+    height: 100px;
+}
+
 .title {
     text-shadow: 1px 1px 5px black;
 }

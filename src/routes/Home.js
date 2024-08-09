@@ -1,10 +1,10 @@
 import React from 'react';
 
-import Header from "../components/Header"
-import Footer from "../components/Footer"
-import MainContent from '../components/MainContent';
+import Header from "../components/home/Header"
+import Footer from "../components/home/Footer"
+import MainContent from '../components/home/MainContent';
 
-export function Home() {
+export default function Home() {
     return (
         <div className="home">
             <Header />
