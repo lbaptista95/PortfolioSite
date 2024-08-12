@@ -1,0 +1,29 @@
+
+  [
+    {
+      "name": "name",
+      "type": "text"
+    },
+    {
+      "name": "password",
+      "type": "password"
+    },
+    {
+      "name": "company",
+      "type": "text"
+    },
+    {
+      "name":"email",
+      "type":"text"
+    },
+    {
+      "name":"contact",
+      "type":"text"
+    },
+    {
+      "name":"social_url",
+      "type":"text"
+    }
+  ]
+
+  

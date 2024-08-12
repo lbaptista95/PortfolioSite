@@ -2,22 +2,18 @@ import React from "react"
 import { Navigate, useNavigate } from "react-router-dom"
 export default function AppHeader()
 {
-   const navigate = useNavigate()
+   const navigate = useNavigate()   
 
-   function aboutClick()
+   function handleClick(path)
    {
-    navigate("/main/about")
-   }
-
-   function homeClick()
-   {
-    navigate("/")
+        navigate(path)
    }
 
     return (
         <div className="app-header">
-            <div className="app-header-button" onClick={aboutClick}>About</div>
-            <div className="app-header-button" onClick={homeClick}>Home</div>           
+            <div className="app-header-button" onClick={() => handleClick("/main/about")}>About</div>
+            <div className="app-header-button" onClick={() => handleClick("/main/signup")}>Sign up</div>
+            <div className="app-header-button" onClick={() => handleClick("/")}>Home</div>                   
         </div>
     )
 }
