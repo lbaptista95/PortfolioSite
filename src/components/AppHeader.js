@@ -11,6 +11,7 @@ export default function AppHeader()
 
     return (
         <div className="app-header">
+            <div className="app-header-button" onClick={() => handleClick("/main/projects")}>Projects</div>
             <div className="app-header-button" onClick={() => handleClick("/main/about")}>About</div>
             <div className="app-header-button" onClick={() => handleClick("/main/signup")}>Sign up</div>
             <div className="app-header-button" onClick={() => handleClick("/")}>Home</div>                   
