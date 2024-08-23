@@ -1,10 +1,11 @@
 import React from 'react';
 
-import FormField from "./ProjectItem"
+import ProjectItem from './ProjectItem';
 
-export default function ProjectList(props)
-{
+export default function ProjectList(props) {
     const projectsPath = props.path
+
+    const [projects, setProjects] = React.useState([])
 
     React.useEffect(() => {
         fetch(projectsPath, {
@@ -16,10 +17,25 @@ export default function ProjectList(props)
             .then(response => response.json())
             .then(data => {
                 console.log(data)
-                            
+                setProjects(data)
             })
             .catch(error => {
                 console.error("COULDN'T GET THE DATA: " + error)
             })
-    }, []) 
+    }, [])
+
+    const projectList = projects.map((project, index) => (
+        <ProjectItem
+            key={index}
+            project={project}
+        />
+    ))
+
+    return (
+        <div className="project-list">
+            <ul>
+            {projectList}
+            </ul>
+        </div>
+    )
 }
