@@ -4,6 +4,8 @@ import FieldElement from "./FieldElement"
 
 import homeData from "../../data/HomeData"
 
+import SkillList from "../projects/SkillList"
+
 export default function FieldElementList()
 {
     
@@ -12,7 +14,7 @@ export default function FieldElementList()
                                     imageSrc = {x.imageSrc} 
                                     imageAltText={x.imageAltText} 
                                     title={x.title} 
-                                    description={x.description} />)
+                                    description={<SkillList skills={x.description} useLabel={false} parentClass="fieldElement"/>}/>)
 
     return (
         <ul className="horizontalList">

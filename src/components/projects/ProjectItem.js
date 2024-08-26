@@ -25,7 +25,7 @@ export default function ProjectItem(props) {
 
   const mediaBox = (
     <div className="project-item-media-box">
-      <VimeoPlayer vids={videos} />
+      {videos.length>0 && <VimeoPlayer vids={videos} />}
       {imageFrames}
     </div>
   )
@@ -37,7 +37,7 @@ export default function ProjectItem(props) {
         <div className="project-item-text-box">
           <h3 className="project-item-info-title">{name}</h3>
           <h4 className="project-item-info-description">{description}</h4>
-          <SkillList skills={skillNames} />
+          <SkillList skills={skillNames} useLabel={true} parentClass="project-item" />
         </div>
       </div>
     </div>
