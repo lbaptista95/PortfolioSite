@@ -13,7 +13,8 @@ export default function LinkButton(props)
 
     function downloadClick()
     {
-        const fileUrl = {linkUrl}; 
+        console.log("will download file from: " + linkUrl)
+        const fileUrl = linkUrl; 
         const link = document.createElement('a');
         link.href = fileUrl;
         link.download = 'LuisBaptista_Resume.pdf';
