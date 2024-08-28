@@ -24,12 +24,14 @@ export default function ProjectList(props) {
             })
     }, [])
 
-    const projectList = projects.map((project, index) => (
+    let projectList = projects.map((project, index) => (
         <ProjectItem
             key={index}
             project={project}
         />
     ))
+
+    projectList = projectList.reverse()
 
     return (
         <div className="project-list">

@@ -3,7 +3,7 @@
     --textColor1: #FAFAFA;
     --textColor2: #E4E4E4;
     --shadowColor1: #0e0e0e;
-    --mainFont: "Roboto Condensed"
+    --mainFont: "Roboto Mono", sans-serif;
 }
 
 html, body, #root {
@@ -15,7 +15,7 @@ html, body, #root {
     height: 100%;
 }
 
-.header {
+.page-header {
     display: flex;
     height: 250px;
     padding-top: 50px;
@@ -31,14 +31,31 @@ html, body, #root {
 
 .app-header {
     display: flex;
+    justify-content: space-between;
+    background-color: #262626;
+}
+
+.app-header-left {
+    display: flex;
+    cursor: pointer;
+    gap: 10px;
+    margin-left: 32px;
+    text-align: center;
+}
+
+.app-header-left>h1 {
+    font-size: 1.4rem;
+    text-shadow: 5px 5px 5px var(--shadowColor1);
+}
+
+.app-header-right {
+    display: flex;
     height: 60px;
     gap: 20px;
     align-items: center;
     padding-right: 32px;
     justify-content: end;
-    background-color: #262626;
 }
-
 
 
 .app-header-button {
@@ -60,16 +77,23 @@ html, body, #root {
 }
 
 .app-header-button:active {
-    box-shadow: 0 0 5px 1px var(--textColor1);
+    box-shadow: 0 5px 10px var(--textColor1);
 }
 
-.title {
-    text-shadow: 1px 1px 5px black;
+.page-header-title {
+    font-size: 1.35rem;
+    text-shadow: 0px 5px 10px black;
 }
 
-.subtitle {
-    text-shadow: 1px 1px 5px black;
-    width: 650px;
+.page-header-subtitle {
+    margin-top: 50px;
+    text-shadow: 0px 5px 10px black;
+    width: 700px;
+    font-size: 1rem;
+}
+
+.page-header-subtitle>a{
+    color: var(--textColor1);
 }
 
 .home {
@@ -105,6 +129,7 @@ html, body, #root {
     text-align: center;
     padding: 0px 60px;
     width: 400px;
+    font-size: 1rem;
 }
 
 .fieldElement-skills {
@@ -114,7 +139,7 @@ html, body, #root {
 }
 
 .fieldElement-skills-list {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     font-weight: bold;
     list-style-type: none;
     display: flex;
@@ -125,7 +150,7 @@ html, body, #root {
 }
 
 .fieldElement-skills-label {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -232,7 +257,7 @@ html, body, #root {
 }
 
 .project-item-info-description {
-    font-size: 1.18rem;
+    font-size: 1rem;
     font-weight: lighter;
     padding-left: 15px;
 }
@@ -302,7 +327,7 @@ html, body, #root {
 
 .project-item-image {
     width: 640px;
-    height: 100%;
+    height: 360px;
     padding: 10px;
     background-color: var(--textColor2);
     border-radius: 8px 0 8px 8px;
@@ -319,7 +344,7 @@ html, body, #root {
 }
 
 .project-item-skills-list {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     list-style-type: none;
     display: flex;
@@ -330,7 +355,7 @@ html, body, #root {
 }
 
 .project-item-skills-label {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: bold;
 }
 
@@ -340,3 +365,142 @@ html, body, #root {
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: max-content;
+    margin-inline: auto;
+    background-color: var(--textColor2);
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 5px var(--shadowColor1);
+    margin-top: 30px;
+}
+
+
+.about-main-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 20px 30px;
+    background-color: var(--textColor2);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.about-main-bottom {
+    width: 690px;  
+    background-color: var(--background1);
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: inset 0px 5px 5px 5px var(--shadowColor1);
+    margin: 0px 30px 40px 30px;
+}
+
+.about-main-bottom-text {
+    text-shadow: 5px 5px 5px var(--shadowColor1);
+}
+
+.about-main-picture {
+    width: 190px;
+    height: 190px;    
+    background-image: url("https://i.imgur.com/VwuGteI.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid black;
+    border-radius: 15%;
+   
+}
+
+.about-main-picture:hover {
+    background-image: url("https://i.imgur.com/UiwR4yR.jpeg");  
+}
+
+.about-main-info {
+    display: flex;
+    flex-direction: column;  
+    gap: 20px; 
+}
+
+.about-main-info-name {
+    color: var(--textColor1);
+    background-color: var(--background1);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1.3rem;
+    width: max-content;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-main-info-other {
+    display: flex;
+    align-items: center;
+    color: var(--background1);;
+    gap: 10px;
+    height: 30px;
+}
+
+.about-main-link-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: max-content;
+    margin-top: 15px;
+}
+
+.about-main-link-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 200px;
+    border: none;
+    font-family: var(--mainFont);
+    width: max-content;
+    padding: 7px 10px;
+    border-radius: 5px;
+    background-color: var(--background1);
+    color: var(--textColor2);
+    cursor: pointer;
+    box-shadow: 0px 1px 2px 0px var(--shadowColor1);
+}
+
+.about-main-link-button>a {
+    font-style: normal;
+    color: var(--textColor1);
+    text-decoration: none;
+}
+
+.about-main-link-button:hover {
+    background-color: var(--textColor1);
+    color: var(--background1);
+    font-weight: 500;
+}
+
+.about-main-link-button:hover a {
+    background-color: var(--textColor1);
+    color: var(--background1);
+    font-weight: 500;
+}
+
+.about-main-link-button-icon {
+    width: 20px;
+    background-color: var(--textColor1);
+    border-radius: 15%;
+    padding: 1px;
+}
+
+.about-main-info-other-icon {
+    width: 25px;
+    height: 25px;
+    background-color: var(--textColor2);
+    border-radius: 50%;
+    padding: 2px;
+}
+

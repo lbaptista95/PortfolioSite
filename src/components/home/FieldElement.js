@@ -9,7 +9,7 @@ export default function FieldElement(props)
         <div className="fieldElement">
             <img src={imageSrc} alt={imageAltText} className="itemImage" />
             <h3>{title}</h3>
-            <p>{description}</p>
+            {description}
         </div>
     )
 }

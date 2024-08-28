@@ -6,7 +6,9 @@ import SkillList from './SkillList'
 
 export default function ProjectItem(props) {
 
-  const { name, description, mediaList, skillNames } = props.project
+  console.log(props.project)
+  
+  const { name, company, description, mediaList, skillNames } = props.project
 
   let images = []
   let videos = []
@@ -35,7 +37,7 @@ export default function ProjectItem(props) {
       <div className="project-item-info">
         {mediaList.length>0 && mediaBox}
         <div className="project-item-text-box">
-          <h3 className="project-item-info-title">{name}</h3>
+          <h3 className="project-item-info-title">{name} {company && ` @ ${company}`}</h3>
           <h4 className="project-item-info-description">{description}</h4>
           <SkillList skills={skillNames} useLabel={true} parentClass="project-item" />
         </div>
