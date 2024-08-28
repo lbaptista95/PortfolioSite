@@ -1,4 +1,4 @@
-import resumePdf from "../data/LuisBaptista_Resume.pdf"
+import resumePdf from "../../build/static/media/Luis_Baptista"
 
 const about = {
     name: "Luís Antonio Oliveira Dias Baptista",

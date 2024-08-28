@@ -13,10 +13,10 @@ export default function LinkButton(props)
 
     function downloadClick()
     {
-        const fileUrl = {linkUrl}; // Caminho relativo ao arquivo na pasta public
+        const fileUrl = {linkUrl}; 
         const link = document.createElement('a');
         link.href = fileUrl;
-        link.download = 'LuisBaptista_Resume.pdf'; // Nome do arquivo ao baixar
+        link.download = 'LuisBaptista_Resume.pdf';
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
