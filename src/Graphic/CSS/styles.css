@@ -366,6 +366,11 @@ html, body, #root {
     border-radius: 5px;
 }
 
+.about {
+    display: flex;
+    background: linear-gradient(var(--background1), var(--shadowColor1));
+}
+
 .about-main {
     display: flex;
     flex-direction: column;
@@ -374,6 +379,7 @@ html, body, #root {
     gap: 20px;
     width: max-content;
     margin-inline: auto;
+    margin-top: 0;
     background-color: var(--textColor2);
     border-radius: 20px;
     box-shadow: 0px 0px 8px 5px var(--shadowColor1);
