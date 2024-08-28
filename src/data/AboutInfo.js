@@ -1,5 +1,3 @@
-import resumePdf from "../../build/static/media/Luis_Baptista"
-
 const about = {
     name: "Luís Antonio Oliveira Dias Baptista",
     pictureUrl: "https://i.imgur.com/UiwR4yR.jpeg",
@@ -22,7 +20,7 @@ const about = {
         {
             linkName: "Resumé",
             iconUrl: "https://static-00.iconduck.com/assets.00/document-round-icon-2048x2048-gay00wsr.png",
-            linkUrl: {resumePdf},
+            linkUrl: "../../build/static/media/Luis_Baptista",
             isDownload: true
         }
     ]
