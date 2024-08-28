@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/PortfolioSite/static/css/main.ebfb6602.css",
-    "main.js": "/PortfolioSite/static/js/main.ffa6785f.js",
+    "main.css": "/PortfolioSite/static/css/main.498d64a1.css",
+    "main.js": "/PortfolioSite/static/js/main.5af52fa1.js",
     "static/media/header_bg.jpg": "/PortfolioSite/static/media/header_bg.adf9ed5dcd9a695de81b.jpg",
+    "static/media/LuisBaptista_Resume.pdf": "/PortfolioSite/static/media/LuisBaptista_Resume.77409bd25a37d0eaf776.pdf",
     "static/media/backend_icon.png": "/PortfolioSite/static/media/backend_icon.d8fb0f638736cdb2a419.png",
-    "static/media/unity_logo.png": "/PortfolioSite/static/media/unity_logo.e8a24362fe03e59397a0.png",
+    "static/media/unity_icon.png": "/PortfolioSite/static/media/unity_icon.e8a24362fe03e59397a0.png",
     "index.html": "/PortfolioSite/index.html",
-    "main.ebfb6602.css.map": "/PortfolioSite/static/css/main.ebfb6602.css.map",
-    "main.ffa6785f.js.map": "/PortfolioSite/static/js/main.ffa6785f.js.map"
+    "main.498d64a1.css.map": "/PortfolioSite/static/css/main.498d64a1.css.map",
+    "main.5af52fa1.js.map": "/PortfolioSite/static/js/main.5af52fa1.js.map"
   },
   "entrypoints": [
-    "static/css/main.ebfb6602.css",
-    "static/js/main.ffa6785f.js"
+    "static/css/main.498d64a1.css",
+    "static/js/main.5af52fa1.js"
   ]
 }
