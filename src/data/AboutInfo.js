@@ -20,7 +20,7 @@ const about = {
         {
             linkName: "Resumé",
             iconUrl: "https://static-00.iconduck.com/assets.00/document-round-icon-2048x2048-gay00wsr.png",
-            linkUrl: "../../build/static/media/Luis_Baptista",
+            linkUrl: "https://drive.google.com/uc?export=download&id=1RQnTUaKUuGgb4kYx6yIL8r8vG4k_QZ0W",
             isDownload: true
         }
     ]
