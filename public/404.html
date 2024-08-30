@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="refresh" content="0; URL=/" />
+    <script>        
+        (function() {            
+            var base = '/PortfolioSite';
+            
+            var pathname = window.location.pathname.replace(base, '');
+            
+            if (pathname === '/' || pathname === '') {
+                return;
+            }
+            
+            window.location.replace(base + '/?' + pathname);
+        })();
+    </script>
+</head>
+<body>
+    Redirecting...
+</body>
+</html>

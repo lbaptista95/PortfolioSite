@@ -237,16 +237,31 @@ html, body, #root {
     box-shadow: 0 0 10px 5px var(--shadowColor1);
 }
 
-.project-list {
+.projects-page {
     display: flex;
     flex-direction: column;
+    gap: 0;
+}
+
+.project-list {   
+    background: linear-gradient(var(--background1), var(--shadowColor1));
+    margin-top: 0; 
+    width: 100vw; 
+    height: 100%;
+    padding-inline: auto;
+}
+
+.project-list>ul {
+    display: flex;
+    flex-direction: column;    
     align-items: center;
-    background: linear-gradient(var(--background1), var(--shadowColor1))
+    margin-left: 0;
 }
 
 .project-item {
-    margin-bottom: 40px;
+    margin-bottom: 2vw;    
 }
+
 
 .project-item-info {
     display: flex;
@@ -257,21 +272,25 @@ html, body, #root {
 .project-item-info-title {
     background-color: var(--textColor2);
     color: var(--background1);
-    padding: 15px;
+    padding: 1vw 1vh;
     margin-top: 0;
     font-weight: 900;
     font-size: 1.55rem;
     border-radius: 0 8px 8px 0;
-
 }
 
 .project-item-info-description {
     font-size: 1rem;
     font-weight: lighter;
     padding-left: 15px;
+    flex: 1 1 500px;
 }
 
-.project-item-media-box {}
+.project-item-media-box {
+    padding: 10px;
+    background-color: var(--textColor2);
+    border-radius: 8px 0 8px 8px;
+}
 
 .project-item-text-box {
     font-weight: normal;
@@ -279,19 +298,16 @@ html, body, #root {
 }
 
 .project-item-video {
-    display: flex;
-    padding: 10px;
-    background-color: var(--textColor2);
-    border-radius: 8px 0 8px 8px;
+    display: flex;    
     position: relative;
     width: 640px;
-    height: 360px;
+    height: 360px;    
 }
 
 .project-item-video-frame {
     width: 100%;
     height: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 .video-player-side-button {
@@ -336,10 +352,7 @@ html, body, #root {
 
 .project-item-image {
     width: 640px;
-    height: 360px;
-    padding: 10px;
-    background-color: var(--textColor2);
-    border-radius: 8px 0 8px 8px;
+    height: 360px;   
 }
 
 .project-item-image>img {
@@ -374,6 +387,8 @@ html, body, #root {
     padding: 5px 10px;
     border-radius: 5px;
 }
+
+
 
 .about {
     display: flex;
@@ -524,4 +539,124 @@ html, body, #root {
     border-radius: 50%;
     padding: 2px;
 }
+
+@media (max-width: 768px) {    
+    
+    .app-header-left {
+        text-align: center;
+    }
+
+    .app-header-left>h1 {
+        font-size: 1rem;
+    }
+
+    .app-header-right 
+    {
+        padding-right: 0;
+        justify-content: center;
+    }
+
+    .horizontalList {
+        width: 100vw;
+        margin-left: 0;
+        padding-inline: 0;
+    }
+
+    .fieldElement {
+        width: 100vw;
+        padding-inline: 3vw;
+        margin-bottom: 30px;
+    }
+
+    .project-list>ul {
+        display: flex;
+        flex-direction: column;    
+        align-items: center;
+        padding-inline: 3vw;
+    }
+
+    .project-item {
+        display: flex;
+        width: 100%;
+        margin-bottom: 8vh;
+    }    
+
+    .project-item-info {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .project-item-info-title {
+        margin-top: 0;
+        margin-inline: 3vw;
+        border-radius: 0px 0px 8px 8px;
+    }
+    
+    .project-item-info-description {
+        padding-inline: 3vw;
+    }
+
+    .project-item-media-box {        
+        width: 100%;
+        background-color: var(--textColor2);
+        border-radius: 8px 8px 0px 0px;
+        margin-inline: 3vw;
+    }
+
+    .project-item-video {
+        display: flex;  
+        width: auto;  
+        height:fit-content;
+    }
+
+    .project-item-video-frame {
+        width: 100%;
+        height: 180px;
+        border-radius: 8px 8px 8px 8px;
+    }
+
+    .project-item-image {
+        width: inherit;
+        height: 100%;
+    }
+    
+    .project-item-image>img {
+        width: inherit;
+        height: 100%;
+    }
+    
+    .about-main {
+        margin-inline: 2vw;
+        margin-bottom: 20px;
+    }
+
+    .about-main-top {
+        margin: 0;
+    }
+
+    .about-main-info {
+        width: 100%;
+        margin-inline: 0;
+        gap: 10px
+    }
+
+    .about-main-info-name {
+        width: auto;
+    }
+
+    .about-main-info-other {
+        width: auto;
+    }
+
+    .about-main-link-buttons {
+        width: auto;
+    }
+
+    .about-main-bottom {
+        margin: 0 20px 10px 20px;
+    }
+}
+
+
 
