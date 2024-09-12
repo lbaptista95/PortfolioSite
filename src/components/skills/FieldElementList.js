@@ -4,7 +4,7 @@ import FieldElement from "./FieldElement"
 
 import homeData from "../../data/HomeData"
 
-import SkillList from "../projects/SkillList"
+import SkillList from "../SkillList"
 
 export default function FieldElementList()
 {

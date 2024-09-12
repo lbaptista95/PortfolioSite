@@ -1,27 +1,27 @@
 import React from "react"
-import { useNavigate } from "react-router-dom"
-export default function AppHeader()
-{
-   const navigate = useNavigate()   
 
-   function handleClick(path)
-   {
-        navigate(path)
-   }
+export default function AppHeader() {
+
+    function handleScrollToSection(sectionId) {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+
+    }
 
     return (
         <div className="app-header">
-            <div className="app-header-left" onClick={() => handleClick("/")}>
+            <div className="app-header-left" onClick={() => handleScrollToSection("/")}>
                 <h1>Luís Baptista</h1>
                 <h1>|</h1>
-                <h1 style={{fontWeight:'lighter'}}> Software Developer</h1>
+                <h1 style={{ fontWeight: 'lighter' }}> Software Developer</h1>
             </div>
             <div className="app-header-right">
-                <div className="app-header-button" onClick={() => handleClick("/main/projects")}>Projects</div>
-                <div className="app-header-button" onClick={() => handleClick("/main/about")}>About</div>
-                {/* <div className="app-header-button" onClick={() => handleClick("/main/signup")}>Sign up</div> */}
-                <div className="app-header-button" onClick={() => handleClick("/")}>Home</div>    
-            </div>               
+                <div className="app-header-button" onClick={() => handleScrollToSection("about")}>Home</div>
+                <div className="app-header-button" onClick={() => handleScrollToSection("skills")}>Skills</div>
+                <div className="app-header-button" onClick={() => handleScrollToSection("projects")}>Projects</div>                
+            </div>
         </div>
     )
 }

@@ -13,7 +13,6 @@ export default function LinkButton(props)
 
     function downloadClick()
     {
-        console.log("will download file from: " + linkUrl)
         const fileUrl = linkUrl; 
         const link = document.createElement('a');
         link.href = fileUrl;
@@ -24,8 +23,8 @@ export default function LinkButton(props)
     }
 
     return (
-        <button className="about-main-link-button" key={key} onClick={!isDownload ? navigateClick : downloadClick}>
-            <img src ={iconUrl} className="about-main-link-button-icon"/>
+        <button className="contact-link-button" key={key} onClick={!isDownload ? navigateClick : downloadClick}>
+            <img src ={iconUrl} className="contact-link-button-icon"/>
             {linkName}
         </button>
     )

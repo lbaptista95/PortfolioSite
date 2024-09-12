@@ -8,7 +8,7 @@ export default function AppMain()
     return (
         <main>
             <AppHeader/>
-            <Outlet/>
+            {/* <Outlet/> */}
         </main>
     )
 }

@@ -2,7 +2,8 @@ import React from 'react'
 
 import VimeoPlayer from './VimeoPlayer'
 import ImageFrame from './ImageFrame'
-import SkillList from './SkillList'
+import SkillList from '../SkillList'
+import ProjectTitle from './ProjectTitle'
 
 export default function ProjectItem(props) {
 
@@ -32,12 +33,15 @@ export default function ProjectItem(props) {
     </div>
   )
 
+  const title = name + (company ? ` @ ${company}` : "")
+
+  
   return (
     <div className='project-item'>
       <div className="project-item-info">
         {mediaList.length>0 && mediaBox}
         <div className="project-item-text-box">
-          <h3 className="project-item-info-title">{name} {company && ` @ ${company}`}</h3>
+          <ProjectTitle title={title}/>          
           <h4 className="project-item-info-description">{description}</h4>
           <SkillList skills={skillNames} useLabel={true} parentClass="project-item" />
         </div>

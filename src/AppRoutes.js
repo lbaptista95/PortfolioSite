@@ -1,24 +1,24 @@
 import React from "react"
-import Home from "./routes/Home";
+import Skills from "./sections/Skills";
 import AppMain from "./components/AppMain"
-import About from "./routes/About"
-import SignUp from "./routes/SignUp"
-import Projects from "./routes/Projects"
+import About from "./sections/About"
+import SignUp from "./sections/SignUp"
+import Projects from "./sections/Projects"
 
-import { Route, Routes, Navigate } from 'react-router-dom';
-
-export default function AppRoutes()
-{
+export default function AppSections() {
   return (
-    <Routes>
-      <Route path="/" element = {<Navigate to="main/home"/> }/>
+    <div>
+      <AppMain />
+      <section id="about">
+        <About/>        
+      </section>
+      <section id="skills">
+        <Skills/>        
+      </section>
+      <section id="projects">
+        <Projects/>        
+      </section>
+    </div>
 
-      <Route path="main" element={<AppMain />}>
-        <Route path="home" element={<Home />}/>
-        <Route path="about" element={<About />}/>
-        <Route path="projects" element={<Projects />}/>
-        {/* <Route path="signup" element={<SignUp />}/> */}
-      </Route>
-    </Routes>
   )
 }
