@@ -17,10 +17,10 @@ export default function AppHeader()
                 <h1 style={{fontWeight:'lighter'}}> Software Developer</h1>
             </div>
             <div className="app-header-right">
+                <div className="app-header-button" onClick={() => handleClick("/")}>Home</div>   
                 <div className="app-header-button" onClick={() => handleClick("/main/projects")}>Projects</div>
                 <div className="app-header-button" onClick={() => handleClick("/main/about")}>About</div>
-                {/* <div className="app-header-button" onClick={() => handleClick("/main/signup")}>Sign up</div> */}
-                <div className="app-header-button" onClick={() => handleClick("/")}>Home</div>    
+                {/* <div className="app-header-button" onClick={() => handleClick("/main/signup")}>Sign up</div> */}                 
             </div>               
         </div>
     )
